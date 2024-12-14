@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+</head>
+<body>
+
+<!-- Centering the form using a table -->
+<table >
+    <tr>
+        <td >
+            <h2>Event Registration Form</h2>
+            <form id="registrationForm">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name">Full Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="text" id="phone" name="phone" required><br><br>
+
+                    <label for="age">Age:</label><br>
+                    <input type="number" id="age" name="age" required min="1"><br><br>
+
+                    <label for="address">Address:</label><br>
+                    <input type="text" id="address" name="address" required><br><br>
+
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>College Details</legend>
+                    <label for="college name">College Name</label><br>
+                    <input type="text" id="college name" name="college name" required><br><br>
+                    <label for="branch">Branch</label><br>
+                    <input type="text" id="branch" name="branch" required><br><br>
+                    <label for="year">Year</label><br>
+                    <input type="text" id="year" name="year" required><br><br>
+                    <label for="file">ID Proof</label><br>
+                    <input type="file" id="file" name="file" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Participation Details</legend>
+                    <label for="teamdetails">TeamName</label><br>
+                    <input type="text" id="teamdetails" name="teamdetails" required><br><br>
+                    <label for="teamsize">TeamSize</label><br>
+                     <select name="teamSize" id="teamsize" required>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                    </select><br><br>
+                    <label>Participant Type:</label><br>
+                    <input type="radio" id="dayscholar" name="participantType" value="Day Scholar" required>
+                    <label for="dayscholar">Day Scholar</label><br>
+                    <input type="radio" id="hosteler" name="participantType" value="Hosteler" required>
+                    <label for="hosteler">Hosteler</label><br><br>
+
+                    <label for="passCollection">Pass Collection:</label><br>
+                    <select id="passCollection" name="passCollection" required>
+                        <option value="">Select Pass Collection Method</option>
+                        <option value="In-person">In-person</option>
+                        <option value="Online">Online</option>
+                        <option value="Mail">Mail</option>
+                    </select><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Dietary Preferences</legend>
+                    <label for="dietaryPreferences">Dietary Preferences:</label><br>
+                    <input type="checkbox" id="vegetarian" name="dietaryPreferences" value="Vegetarian">
+                    <label for="vegetarian">Vegetarian</label><br>
+                    <input type="checkbox" id="vegan" name="dietaryPreferences" value="Vegan">
+                    <label for="Nonvegan">NonVegan</label><br>
+                    <input type="checkbox" id="glutenFree" name="dietaryPreferences" value="Gluten Free">
+                    <label for="glutenFree">Gluten Free</label><br><br>
+                </fieldset>
+
+                <label for="comments">Additional Comments:</label><br>
+                <textarea id="comments" name="comments" rows="4" placeholder="Any special requests or comments..."></textarea><br><br>
+
+                <button type="submit">Register</button>
+                <button type="reset">Reset</button>
+            </form>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
